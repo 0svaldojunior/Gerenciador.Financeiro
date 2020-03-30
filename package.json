@@ -1,0 +1,43 @@
+{
+  "name": "Gerenciador.Financeiro",
+  "version": "1.0.0",
+  "description": "Gerenciador financeiro - desenvolvido para teste da KingHost",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest",
+    "eslint": "eslint",
+    "lint": "eslint src/** test/** --fix",
+    "secure-node": "jest --watch --verbose=true",
+    "latest-migration": "knex migrate:latest --env test",
+    "rollback-migration": "knex migrate:rollback --env test",
+    "make-migration": "knex migrate:make $1 --env test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0svaldojunior/Gerenciador.Financeiro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0svaldojunior/Gerenciador.Financeiro/issues"
+  },
+  "homepage": "https://github.com/0svaldojunior/Gerenciador.Financeiro#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "23.6.0",
+    "supertest": "3.3.0"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "1.18.3",
+    "consign": "0.1.6",
+    "express": "4.16.4",
+    "knex": "0.15.2",
+    "knex-logger": "^0.1.0",
+    "pg": "7.7.1"
+  }
+}
