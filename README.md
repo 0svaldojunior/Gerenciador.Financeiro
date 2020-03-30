@@ -1,6 +1,9 @@
 # Gerenciador.Financeiro
 Gerenciador financeiro - desenvolvido para teste da KingHost
 
+## Npm
+    -> https://nodejs.org/en/download/ ==> * Select your O.S. | Version: 6.13.4
+
 ## Services Installers
     -> npm i -S -E express@4.16.4
     -> npm i -S -E body-parser@1.18.3
